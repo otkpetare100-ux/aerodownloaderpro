@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aero Downloader</title>
+    <style>
+        body {
+            width: 320px;
+            padding: 20px;
+            background-color: #0f0f13;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            margin-top: 0;
+            color: #00B4DB;
+            font-size: 20px;
+        }
+        p {
+            color: #a0a0a0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        #download-btn {
+            background-color: #00B4DB;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            transition: background-color 0.2s;
+        }
+        #download-btn:hover {
+            background-color: #0083B0;
+        }
+        #status {
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .success { color: #10B981; }
+        .error { color: #EF4444; }
+    </style>
+</head>
+<body>
+    <h2>Aero Downloader</h2>
+    <p>Envía el video de esta pestaña directamente a la aplicación de escritorio.</p>
+    <button id="download-btn">⚡ Descargar Video Actual</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

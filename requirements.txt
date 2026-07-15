@@ -1,0 +1,6 @@
+yt-dlp
+customtkinter
+requests
+Pillow
+imageio-ffmpeg
+plyer

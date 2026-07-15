@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Aero Downloader PRO",
+    "version": "1.0",
+    "description": "Envía videos de YouTube directamente a la aplicación Aero Downloader de tu PC.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Enviar a Aero Downloader"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["boton_transparent.png"],
+            "matches": ["*://*.youtube.com/*"]
+        }
+    ]
+}
